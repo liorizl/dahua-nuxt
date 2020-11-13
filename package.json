@@ -1,0 +1,36 @@
+{
+  "name": "dahua-nuxt",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "export": "nuxt export",
+    "serve": "nuxt serve",
+    "generate": "nuxt generate",
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@nuxtjs/axios": "^5.12.0",
+    "@nuxtjs/eslint-config": "^3.0.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "@nuxtjs/proxy": "^2.0.1",
+    "axios": "^0.19.2",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.2.0",
+    "eslint-config-prettier": "^6.11.0",
+    "eslint-plugin-html": "^6.0.2",
+    "eslint-plugin-nuxt": "^1.0.0",
+    "eslint-plugin-prettier": "^3.1.4",
+    "js-beautify": "^1.11.0",
+    "less": "^3.12.2",
+    "less-loader": "^6.2.0",
+    "node-cmd": "^3.0.0",
+    "nuxt": "^2.14.7",
+    "prettier": "^2.0.5",
+    "style-loader": "^1.2.1"
+  }
+}

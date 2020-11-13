@@ -1,0 +1,10 @@
+<template>
+    <nuxt-child></nuxt-child>
+</template>
+
+<script>
+export default {
+}
+</script>
+<style  scoped>
+</style>

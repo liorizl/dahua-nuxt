@@ -1,0 +1,110 @@
+@import "./global.less";
+.item-ul {
+    width: @box-width; height: 55px;
+    border: 1px solid #e7eaf1; border-radius: 5px;
+    margin: 15px auto;
+    display: flex; justify-content: center; align-items: center;
+    li {
+        margin: 0 15px;
+        padding: 0 10px;
+        position: relative;
+        height: 100%;
+        &:hover {
+            .item-more {
+                display: block;
+                li:nth-child(1) {
+                    a {
+                        animation: move .3s linear forwards;
+                    }
+                }
+            }
+        }
+        a {
+            height: 100%;
+            line-height: 55px;
+        }
+        a.item-more-icon {
+            .iconfont();
+            &::after {
+                content: '\e601';
+                font-size: 12px;
+                margin-left: 5px;
+                -webkit-transform: scale(0.75);
+                transform: scale(0.75);
+                display: inline-block;
+            }
+        }
+        .item-more {
+            position: absolute;
+            width: 130%;
+            left: -10px;
+            top: 54px;
+            padding: 10px 0;
+            background-color: #fff;
+            display: none;
+            border: 1px solid #ededed;
+            border-top: 0;
+            li {
+                overflow: hidden;
+                width: 100%; height: 30px;
+                margin-left: 10px;
+                a {
+                    font: 14px/30px @font-family-title;
+                    color: #555;
+                }
+            }
+            li:nth-child(1) {
+                position: relative;
+                a {
+                    position: absolute;
+                    left: -100%;
+                }
+            }
+        }
+        @keyframes move {
+            from {
+                left : -20%;
+            }
+            to {
+                left: 10px;
+            }
+        }
+    }
+    
+}
+.item-col-list {
+    overflow: hidden;
+    width: @box-width;
+    margin: 50px auto 30px;
+    display: flex; flex-wrap: wrap;
+    li {
+        width: 280px; height: 176px;
+        margin-left: (@box-width - 1120px)/3;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        box-sizing: border-box;
+        border: 1px solid #ededed;
+        box-shadow: 0px 3px 6px #eeeeee;
+        .item-col-list-pic {
+            img {
+                width: 100%;
+            }
+        }
+        &:nth-of-type(4n + 1) {
+            margin-left: 0;
+        }
+        &:hover {
+            box-shadow: 0px 2px 5px 5px #eee;
+        }
+        .item-col-list-title {
+            width: 100%;
+            text-align: center;
+            font-size: 14px;
+            height: 40px;
+            line-height: 40px;
+            a {
+                color: #666;
+            }
+        }
+    }
+}

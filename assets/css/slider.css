@@ -1,0 +1,128 @@
+.slider {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+}
+
+.slider-con {
+    position: relative;
+    z-index: 1;
+    left: 0;
+    width: 100%;
+}
+
+.slider-item {
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-item img {
+    width: 100%;
+}
+
+.slider-bar {
+    height: 40px;
+    position: absolute;
+    z-index: 2;
+    bottom: 30px;
+    left: 50%;
+    transform: translate(-50%);
+    padding: 0 30px;
+    background-color: #333;
+    border-radius: 10px;
+    opacity: .5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-bar:hover {
+    opacity: 1;
+}
+
+.slider-bar a {
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px solid #999;
+    border-radius: 50%;
+    box-sizing: border-box;
+    margin-left: 15px;
+    cursor: pointer;
+}
+
+.slider-bar a.now {
+    width: 24px;
+    height: 24px;
+    border-color: #fff;
+    border-width: 3px;
+}
+
+.slider-bar a:after {
+    width: 6px;
+    height: 6px;
+    background-color: #999;
+    content: '';
+    display: block;
+    border-radius: 50%;
+}
+
+.slider-bar a.now:after {
+    background-color: #fff;
+    width: 8px;
+    height: 8px;
+}
+
+.slider-bar a:first-of-type {
+    margin-left: 0;
+}
+
+/* .pre,next下面箭头层的边框宽度和高度分都为它的一半，如:border-width:40px 20px 40px 20px; */
+.pre,
+.next {
+    width: 40px;
+    height: 80px;
+    position: absolute;
+    cursor: pointer;
+    z-index: 3;
+    top: 50%;
+    transform: translate(0, -50%);
+    overflow: hidden;
+}
+
+.pre {
+    left: 50px;
+}
+
+.next {
+    right: 50px;
+}
+
+.nextArrow,
+.preArrow {
+    width: 0;
+    height: 0;
+    border-width: 40px 20px 40px 20px;
+    border-style: solid;
+    border-color: transparent #FFF transparent #FFF;
+    opacity: 0.3;
+}
+
+.nextArrow:hover,
+.preArrow:hover {
+    opacity: 1;
+}
+
+.nextArrow {
+    margin-left: 50%;
+}
+
+.preArrow {
+    margin-left: -50%;
+}
