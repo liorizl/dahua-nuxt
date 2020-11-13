@@ -81,6 +81,7 @@ dist
 .idea
 .editorconfig
 .eslintrc.js
+.prettierrc
 
 package-lock.json
 # Service worker
