@@ -1,0 +1,112 @@
+@import "./global.less";
+.item-intro {
+    margin: 10px auto;
+    background-color: #fff;
+    .item-intro-c {
+        width: @box-width;
+        margin: 20px auto;
+        .item-intro-mes {
+            display: flex; justify-content: space-around; align-items: flex-start;
+            margin-top: 30px;
+            .item-intro-pic {
+                width: 45%;
+                img {
+                    width: 100%;
+                }
+            }
+            .item-intro-word {
+                width: 45%;
+                .item-intro-title {
+                    font:  20px/50px @font-family-title;
+                }
+                .item-intro-word-c {
+                    color: #999;
+                    font: 14px/26px @font-family-title;
+                }
+            }
+            .item-intro-more {
+                width: 100%; height: 40px;
+                display: flex; justify-content: space-between;
+                margin-top: 20px;
+                li {
+                    width: 46%; height: 100%;
+                    border: 1px solid #ededed;
+                    line-height: 40px;
+                    font-size: 14px;
+                    color: #666;
+                    text-indent: 1em;
+                    a {
+                        color: #666
+                    }
+                }
+            }
+        }
+    }
+}
+.item-article-outer {
+    width: 100%;
+    background-color: #F1F4F5;
+    .item-article {
+        width: @box-width;
+        margin: 0 auto;
+        display: flex; justify-content: space-between;
+        &>div {
+            background-color: #FFF;
+            margin-top: 30px;
+            margin-bottom: 30px;
+        }
+        .item-art-recommend {
+            width: 300px;
+            .item-art-recommend-title {
+                width: 84%; margin: 10px auto;
+            }
+            .item-art-recommend-c {
+                width: 84%; margin: 10px auto;
+                li {
+                    width: 100%;
+                    margin-top: 15px;
+                    img {
+                        width: 100%;
+                    }
+                    .item-recomend-t {
+                        text-align: center;
+                        font: 14px/30px @font-family-title;
+                        color: #666;
+                    }
+                }
+            }
+        }
+        .item-art-con {
+            width: 850px;
+            .item-article-con-t {
+                width: 92%; height: 50px;
+                margin: 20px auto;
+                border-bottom: 1px solid #ededed;
+                display: flex; align-items: center; justify-content: space-between;
+                span {
+                    display: block;
+                    box-sizing: content-box;
+                    width: 100px;
+                    text-align: center;
+                    font: 16px/50px @font-family-title;
+                    color: @font-red;
+                    border-bottom: 2px solid @font-red;
+                }
+                .art-hits {
+                    margin-right: 20px;
+                    color: #777;
+                    &::before {
+                        .iconfont(18px);
+                        line-height: 50px;
+                        margin-right: 3px;
+                        content: '\e63e'
+                    }
+                }
+            }
+            .item-article-con-c {
+                width: 90%;
+                margin: 20px auto;
+            }
+        }
+    }
+}
