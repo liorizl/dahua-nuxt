@@ -4,7 +4,7 @@
         <header-com />
         <nav-com :colList="colList" :recom="recom"> </nav-com>
         <slider-com :bannerList="bannerList"></slider-com>
-        <nuxt-child />
+        <!-- <nuxt-child /> -->
         <bottom-pro />
         <footer-com />
     </div>

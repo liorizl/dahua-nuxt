@@ -74,7 +74,7 @@ export default {
             const fatherCol1 = fatherCol.haveChild.find(col => {
                 return col.alias === params.alias
             })
-            return fatherCol.haveChild.some(col => {
+            return fatherCol1.haveChild.some(col => {
                 return col.alias === params.aliasOrId
             })
         }
