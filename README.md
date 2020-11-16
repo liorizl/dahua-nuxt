@@ -1,4 +1,5 @@
 # dahua-nuxt
+<<<<<<< HEAD
 
 ## Build Setup
 
@@ -17,3 +18,6 @@ $ npm run start
 $ npm run generate
 ```
 
+=======
+dahua web written in nuxt(vue)
+>>>>>>> 36382c3e8dec538258a764021e2ef10cfcb66a36
